@@ -1,0 +1,30 @@
+{
+    "title": "华为认证考试学习笔记",
+    "author": "家军@ljjjustin",
+    "structure": {
+        "readme": "README.md"
+    },
+    "language": "zh-hans",
+    "plugins": [
+        "-sharing",
+        "-highlight",
+        "prism",
+        "search-pro",
+        "copy-code-button",
+        "tbfed-pagefooter",
+        "expandable-chapters"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "",
+            "modify_label": "time：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "expandable-chapters": {}
+    },
+    "links": {
+        "sidebar": {
+        }
+    }
+}
+
