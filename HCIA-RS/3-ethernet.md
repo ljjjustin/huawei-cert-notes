@@ -85,15 +85,15 @@ MAC地址是全球唯一的，长度是48 bit，分层两部分：
 帧的接收流程
 
 ```
-if  frame.dmac != local mac 
-    or frame.dmac != boradcast mac
-    or frame.dmac != multicast mac; then
-	drop frame
-endif
-
 calculate fcs;
 
 if frame.fcs is wrong; then
+	drop frame
+endif
+
+if  frame.dmac != local mac 
+    or frame.dmac != boradcast mac
+    or frame.dmac != multicast mac; then
 	drop frame
 endif
 
