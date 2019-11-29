@@ -1,6 +1,6 @@
-## 以太网帧结构
+# 以太网帧结构
 
-### OSI分层模型
+## OSI分层模型
 
 OSI参考模型各个层次分层如下：
 
@@ -14,7 +14,7 @@ OSI参考模型各个层次分层如下：
 
 
 
-### TCP/IP分层模型
+## TCP/IP分层模型
 
 TCP/IP模型将网络分为四层，TCP/IP模型不关注底层物理介质，主要关注终端之间的逻辑数据流转发。
 
@@ -26,7 +26,7 @@ TCP/IP每层都使用该层的协议数据单元PDU（protocol data unit）彼�
 * 网络层：packet（数据包）
 * 数据链路层：frame (帧)
 
-#### 帧格式
+### 帧格式
 
 以太网帧有两种格式，如下图所示：
 
@@ -56,7 +56,7 @@ TCP/IP每层都使用该层的协议数据单元PDU（protocol data unit）彼�
 * LLC（Logical Link Control）：逻辑链路控制，由DSAP（Destination Service Access Point）、SSAP（Source Service Access Point）及Control字段组成；
 * SNAP（Sub-network Access Protocol）：有机构代码和类型字段组成。Type字段与Ethernet II帧的Type字段相同。
 
-### MAC地址
+## MAC地址
 
 ![image-20190220115130666](assets/image-20190220115130666.png)
 
@@ -65,7 +65,7 @@ MAC地址是全球唯一的，长度是48 bit，分层两部分：
 * OUI（Organization Unique Identifier）：IEEE统一分配给设备制造商的代号；
 * 后面24 bit由制造商自行分配；
 
-#### 帧的传输
+### 帧的传输
 
 局域网上的帧可以通过三种方式发送
 

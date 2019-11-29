@@ -1,4 +1,4 @@
-## ARP协议
+# ARP协议
 
 ARP（Address Resolution Protocol）
 
@@ -6,7 +6,7 @@ ARP（Address Resolution Protocol）
 
 
 
-### ARP数据包格式
+## ARP数据包格式
 
 ARP数据包格式如下：
 
@@ -32,7 +32,7 @@ ARP数据包格式如下：
 
 ![image-20190222173547325](assets/image-20190222173547325.png)
 
-### ARP缓存
+## ARP缓存
 
 为了提高IP地址到MAC地址的转换速度，网络设备一般都有ARP缓存，数据发送前，先查找ARP缓存表，缓存表中找不到对方的MAC地址时，才会通过ARP协议获对应IP地址的MAC地址。
 
@@ -51,7 +51,7 @@ Address                  HWtype  HWaddress           Flags Mask            Iface
 192.168.1.1              ether   00:0e:c6:b0:dc:42   C                     enp0s31f6
 ```
 
-### ARP请求
+## ARP请求
 
 在ARP缓存表中找不到IP地址对应的MAC地址时，主机会通过广播的方式发送ARP Request报文。报文的内容包括：
 
@@ -67,7 +67,7 @@ Address                  HWtype  HWaddress           Flags Mask            Iface
 
 上图是`192.168.1.3`这个主机缺少`192.168.1.2`的MAC地址时，发出的ARP广播报文。
 
-### ARP响应
+## ARP响应
 
 主机收到ARP Request报文后，处理流程如下：
 
@@ -84,7 +84,7 @@ endif
 
 ARP响应报文是单薄报文，报文中源MAC地址是自己的MAC地址，目的MAC地址是原先发生ARP Request的主机的MAC地址。
 
-### ARP代理
+## ARP代理
 
 如果两台主机位于不同的网络，而且没有配置网关的情况下，通过广播是无法获取对方的MAC地址，这时候如果路由器开启ARP代理功能，双方不配置网关也能实现相互通信。如下图：
 
@@ -94,7 +94,7 @@ ARP响应报文是单薄报文，报文中源MAC地址是自己的MAC地址，�
 
 
 
-### 免费ARP
+## 免费ARP
 
 
 

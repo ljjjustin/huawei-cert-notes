@@ -1,30 +1,37 @@
 {
     "title": "华为认证考试学习笔记",
-    "author": "家军@ljjjustin",
+    "author": "Jiajun <iamljj@gmail.com>",
     "structure": {
         "readme": "README.md"
-    },
-    "language": "zh-hans",
-    "plugins": [
-        "-sharing",
-        "-highlight",
-        "prism",
-        "search-pro",
-        "copy-code-button",
-        "tbfed-pagefooter",
-        "expandable-chapters"
-    ],
-    "pluginsConfig": {
-        "tbfed-pagefooter": {
-            "copyright": "",
-            "modify_label": "time：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "expandable-chapters": {}
     },
     "links": {
         "sidebar": {
         }
+    },
+    "language": "zh-hans",
+    "plugins": [
+        "-sharing",
+        "-highlight", "prism", "prism-themes", "code",
+        "splitter", "multipart", "expandable-chapters", "chapter-fold",
+        "tbfed-pagefooter", "hide-element", "back-to-top-button",
+        "-lunr", "-search", "search-pro",
+        "page-toc-button"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "&copy ",
+            "modify_label": "updated: ",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "page-toc-button": {
+            "maxTocDepth": 2,
+            "minTocSize": 2
+        }
     }
 }
-
