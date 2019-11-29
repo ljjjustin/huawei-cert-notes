@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # build pages
-gitbook build
+rm -fr _book && gitbook build
 
 # check if there is any error
 if [ $? -ne 0 ]; then
