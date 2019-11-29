@@ -1,4 +1,6 @@
+*~
+*.sh
 *.swp
 .DS_Store
-node_modules
 _book
+node_modules
